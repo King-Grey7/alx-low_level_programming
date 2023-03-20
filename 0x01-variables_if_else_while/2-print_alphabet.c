@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase,
- * followed by a new line,
- * did it with a for loop
+ * main - Prints the alphabet.
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	char tamDev;
-
-	for (tamDev = 'a'; tamDev <= 'z'; tamDev++)
+	for (i = 0; i < 26; i++)
 	{
-		putchar(tamDev);
+		putchar(alp[i]);
 	}
-	purchar('\n');
+	putchar('\n');
+
 	return (0);
 }
